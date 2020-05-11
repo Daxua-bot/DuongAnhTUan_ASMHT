@@ -1,0 +1,289 @@
+        body {
+            margin: 0px;
+            font-family: tahoma;
+            /*font khong chân*/
+            font-size: 14px;
+            margin: 0px;
+        }
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #them-gio{
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        margin-top: 20px;
+        opacity: 0.7;
+        color: #fff;
+        background-color: black;
+        float: left;
+        }
+        
+        #them-gio:hover{
+            opacity: 1;
+            transform: translateY(-1px);
+        }
+
+        #gio-hang {
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 4px #ddd;
+            margin: auto;
+            max-width: 1100px;
+            padding: 20px;
+        
+        }
+
+        .item-gio-hang {
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+           
+           margin-top: 20px;
+        }
+
+        .item-gio-hang .hinhAnh img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .item-gio-hang .hinhAnh,
+        .SoLuong,
+        .tongTien,
+        .hanhDong {
+            flex: 1;
+            margin-left: 20px;
+
+        }
+        
+           .item-gio-hang .tongTien{
+               color: red;
+             text-align: center;
+           }
+           .item-gio-hang .SoLuong{
+           
+          text-align: center;
+        }
+        .item-gio-hang .gia {
+            flex: 2;
+           
+        }
+        .item-gio-hang #gach{
+            text-decoration: line-through;
+            color: #aaa;
+        }
+
+        .item-gio-hang .ten {
+            flex: 3;
+        }
+
+        .item-gio-hang .gia .giagoc {
+            font-size: 12px;
+            text-decoration: line-through;
+            color: #aaa;
+        }
+       
+        .item-gio-hang .gia .giagoc {
+            color: #c3090c;
+        }
+        .hanhDong{
+            cursor: pointer;
+        }
+        .item-gio-hang .hanhDong i:hover {
+            color: #c3090c;
+        }
+
+        .thong-bao-gio-trong{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .thong-bao-gio-trong p{
+            color: black;
+            font-size: 18px;
+        }
+        .thong-bao-gio-trong img{
+            height: 300px;
+            width: 300px;
+        }
+        .nut-mua-tiep{
+            color: #fff;
+            border-radius: 5px;
+            padding: 2px;
+            background-color: blue;
+            cursor: pointer;
+        }
+      
+        .tilte-sp p{
+            width: 600px;
+        text-align: center;
+        padding-top: 10px ;
+        font-size: 20px;
+        background-color: #ff2835;
+        border: 1px solid #aaa;
+        color: #ddd;
+        border-radius: 5px 5px 5px 5px;
+        margin: auto;
+        }
+    /**/
+    .nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .nav a:hover{
+        text-decoration: underline;
+    }
+    .nav li{
+        text-decoration: none;
+        color: #fff;
+       
+    }
+    .sub-menu li{
+        width: 100%;
+        font-size: 13px;
+    }
+    .nav li:hover{
+        background-image: linear-gradient(#AAAAAA, #999999);
+    }
+    .nav>li{
+        float: left;
+        margin-right: 15px;
+
+    }
+    
+    .nav>li>a{
+        text-transform: uppercase;
+        color: red;
+    }
+    
+    .nav li{
+        position: relative;
+        list-style:none;
+    }
+    
+    .nav li a{
+        padding: 10px;
+        line-height: 20px;
+        display: inline-block;
+        color: #fff;
+    }
+    
+    .nav .sub-menu{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        background-color: #000000;
+    
+    }
+    
+    .nav li:hover>.sub-menu{
+        display: block;
+    }
+    
+    .nav>li>.sub-menu{
+        top: 40px;
+        left: 0;
+    }
+    /**/
+    .form {
+        width: 30%;
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 4px #ddd;
+        padding: 30px;
+        border-radius: 5px;
+        
+
+        margin: auto;
+        margin-top:30px ;
+    }
+
+    .form label {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+
+    }
+
+    .form 
+    input, .form  button {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+
+    }
+
+    .form input,
+    button {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+
+    }
+
+    .form .error {
+        font-size: 14px;
+        font-style: italic;
+        color: red;
+        line-height: 12px;
+        height: 12px;
+    }
+
+    .gio-hang {
+      
+        margin-right: 50px;
+        height: 30px;
+        float: right;
+    }
+    .gio-hang img{
+        margin-top: -15px;
+    }
+    
+.itemgiohang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemgiohang .hinhAnh img {
+    width: 60px;
+    height: 60px;
+}
+
+.itemgiohang .hinhAnh,
+.tongtien,
+.soluong,
+.hanhdong {
+    flex: 1;
+    margin-left: 20px;
+
+}
+
+.soluong {
+    width: 100px;
+}
+
+.tongtien {
+    font-size: 18px;
+}
+#thanhtren .dangnhap{
+    cursor: pointer;
+}

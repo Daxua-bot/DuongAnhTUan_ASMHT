@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giao diện web</title>
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!--Liên kết thư viện .jquery.min-->
+<script src="js/jquery.min.js"></script>
+<!--Liên kết thư viện bxslider.min.js -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- khỏi tạo slider-->
+<script>
+    $(document).ready(function () {
+        $('.slider').bxSlider({
+            mode: 'horizontal',
+            speed: 500,
+            auto: true,
+            pause: 5000
+        });
+    });
+</script>
+
+<head>
+
+    <style>
+        #hien-thi-san-pham {
+            width: 1200px;
+
+            margin: 0 auto;
+        }
+
+        .slider {
+            width: 900px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: aqua;
+            margin-top: 30px;
+            margin-bottom: 50px;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .san-pham {
+            width: calc(25% - 40px);
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        .ten-san-pham {
+            font-size: 15px;
+            line-height: 30px;
+            color: black;
+        }
+
+        .gia-goc-san-pham {
+            font-size: 12px;
+            color: #c0c0c0;
+            text-decoration: line-through;
+        }
+
+        .hinh-anh-san-pham img {
+            max-width: 200px;
+            max-height: 100%;
+
+        }
+
+        .gia-ban {
+            font-size: 18px;
+            color: red;
+
+        }
+
+        .khu-vuc {
+            font-size: 17px;
+            color: #643406;
+            text-align: right;
+        }
+
+        .giam-gia {
+            color: red;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <header>
+
+
+        <div id="thanhtren">
+
+            <div class="logo-banner">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <div class="timkiem">
+                    <input type="text" placeholder="Nhập từ khóa...">
+                    <input type="button" value="Tìm kiếm">
+                </div>
+                <div class="dangnhap">
+                    <a href="gioHang.html"><input type="button">
+                        <div class="tim">
+                                <img src="images/giohang.png">
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div id="thanhmenu">
+            <div id="khungmenu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="giao_dien.html">
+                                Trang chủ
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tintuc.html">
+                                Tin nổi bật
+                            </a>
+                        </li>
+                        <li>
+                            <a href="doanhnghiep.html">
+                                Doanh nghiệp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tao_nhanhsp.html">
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.asus.com/vn/ASUS_Website_Information/where-to-buy-Laptop">
+                                Đại lý
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chamsoc.html">
+                                CSKH
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Hiển thị nội dung chính của web -->
+        <main>
+
+            <!-- slider -->
+            <div class="slider">
+                <div>
+                    <img src="images/khuyenmai.png">
+                </div>
+                <div>
+                    <img src="images/khuyenmai2.jpg">
+                </div>
+                <div>
+                    <img src="images/khuyenmai3.jpg">
+                </div>
+                <div>
+                    <img src="images/khuyenmai4.jpg">
+                </div>
+            </div>
+            <div class="menutop">
+                <div class="khungmenu">
+                    <ul class="nav">
+                        <li>
+                            <a href="#">Laptop Gaming</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Laptop</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Laptop ASUS</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Laptop</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Laptop VivoBook</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Laptop</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Laptop TUF</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Laptop</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Laptop Normal</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Laptop</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Laptop New</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Laptop</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="hien-thi-san-pham">
+
+            </div>
+        </main>
+        <footer>
+            <div id="quangcao">
+                <img src="images/quangcao2.png">
+            </div>
+
+            <div id="chan">
+                <div class="duoi">Cần thêm?
+                    <div class="chunho">Sonic Master</div>
+                    <div class="chunho">TUF</div>
+                    <div class="chunho">Asus Design Center</div>
+                </div>
+                <div class="duoi">Về chúng tôi
+                    <div class="chunho">Về ASUS</div>
+                    <div class="chunho">Tin tức</div>
+                    <div class="chunho">Giải thưởng</div>
+                </div>
+                <div class="duoi">Cần trợ giúp?
+                    <div class="chunho">Liên hệ</div>
+                    <div class="chunho">Đăng kí sản phẩm</div>
+                    <div class="chunho">Tiến độ sửa chữa</div>
+                </div>
+                <div class="duoi">Cộng đồng
+                    <div class="chunho">Facebook</div>
+                    <div class="chunho">Youtube</div>
+                </div>
+                <div class="ngang">.</div>
+                <div class="luu">
+                    ©ASUSTeK Computer Inc. Bảo lưu mọi quyền.
+                </div>
+            </div>
+        </footer>
+
+        <script>
+
+        </script>
+        <script src="js/hoTro.js"></script>
+        <script src="js/sanPham.js"></script>
+        <script src="js/localstorage.js"></script>
+
+        <script src="js/chuyen-len-giao-dien.js"></script>
+</body>
+
+</html>

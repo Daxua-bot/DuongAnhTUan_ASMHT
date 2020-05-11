@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị giỏ hàng</title>
+    <script src="https://kit.fontawesome.com/f20d460fd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/gioHang.js"></script>
+    <script src="js/sanPham.js"></script>
+    <script src="js/hoTro.js"></script>
+    <script src="js/form.js"></script>
+    <style>
+      #giohang{
+        border: 1px solid #ddd;
+            box-shadow: 2px 2px 4px #ddd;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1100px;
+            margin-top: 100px;
+      }
+      .form {
+            width: 1100px;
+            padding: 1px solid #ddd;
+            box-shadow: 2px 2px 4px #ddd;
+            padding: 30px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+
+        .form label,
+        button {
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form,
+        button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+      .form .error {
+            font-size: 12px;
+            color: red;
+            font-style: italic;
+            margin-top: 5px;
+            line-height: 12px;
+            height: 12px;
+        }
+
+        .form input {
+            width: 1050px;
+            height: 40px;
+        }
+
+        .form label {
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+
+        .thongTin {
+            color: #f7452e;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .btn {
+            font-size: 18px;
+            color: #fff;
+            background-color: black;
+            opacity: 0.7;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+
+        <div id="thanhtren">
+
+            <div class="logo-banner">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <div class="timkiem">
+                    <input type="text" placeholder="Nhập từ khóa...">
+                    <input type="button" value="Tìm kiếm">
+                </div>
+                <div class="dangnhap">
+                    <a href="gioHang.html"><input type="button">
+                        <div class="tim">
+                            <img src="images/giohang.png">
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div id="thanhmenu">
+            <div id="khungmenu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Trang chủ
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tintuc.html">
+                                Tin nổi bật
+                            </a>
+                        </li>
+                        <li>
+                            <a href="doanhnghiep.html">
+                                Doanh nghiệp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.asus.com/vn/ASUS_Website_Information/where-to-buy-Laptop">
+                                Đại lý
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chamsoc.html">
+                                CSKH
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+
+    </header>
+    <div  id="gio-hang">
+        <!--danh sách item giỏ hàng-->
+        <h1 class="tieuDe">Danh Sách Sản Phẩm</h1>
+        <div class="item-gio-hang tieuDeItemGioHang"> 
+                   <div class="hinhAnh">
+                   </div> 
+                     <p class="ten">Sản Phẩm</p>
+                     <div class="gia">
+                        Đơn Giá
+                        </div>
+                        <p class="soLuong">Số Lượng</p>    
+                      <p class="tongTien">Tổng Tiền</p>
+                     <div class="hanhDong">
+                          <p>Thao Tác</p>
+                      </div>
+                </div>
+    </div>
+    <div class="form">
+        <p class="thongTin">Mua Hàng</p>
+        <label for="hoTen">Họ và tên</label>
+        <input type="text" id="hoTen">
+        <label id="hienThiLoiHoTen" for="hoTen" class="error"></label>
+
+        <label for="soDienThoai">Số điện thoại</label>
+        <input type="number" id="soDienThoai">
+        <label id="hienThiLoiSoDienThoai" for="soDienThoai" class="error"></label>
+
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <label id="hienThiLoiEmail" for="email" class="error"></label>
+
+        <label for="ngaySinh">Ngày Sinh</label>
+        <input type="date" id="ngaySinh">
+        <label id="hienThiLoiNgaySinh" for="ngaySinh" class="error"></label>
+
+        <label for="thoiGianNhanHang">Thời gian nhận hàng trong 8-18h</label>
+        <input type="number" id="thoiGianNhanHang">
+        <label id="hienThiLoiThoiGianNhanHang" for="thoiGianNhanHang" class="error"></label>
+
+        <button  onclick="onClickMuaHang()" class="btn">Mua Hàng</button>
+    </div>
+    <footer>
+        <div id="quangcao">
+            <img src="images/quangcao2.png">
+        </div>
+
+        <div id="chan">
+                <div class="duoi">Cần thêm?
+                <div class="chunho">Sonic Master</div>
+                <div class="chunho">TUF</div>
+                <div class="chunho">Asus Design Center</div>
+                    </div>
+                <div class="duoi">Về chúng tôi
+                <div class="chunho">Về ASUS</div>
+                <div class="chunho">Tin tức</div>
+                <div class="chunho">Giải thưởng</div>
+                    </div>
+                    <div class="duoi">Cần trợ giúp?
+                <div class="chunho">Liên hệ</div>
+                <div class="chunho">Đăng kí sản phẩm</div>
+                <div class="chunho">Tiến độ sửa chữa</div>
+                    </div>
+                    <div class="duoi">Cộng đồng
+                <div class="chunho">Facebook</div>
+                <div class="chunho">Youtube</div>
+                    </div>
+                <div class="ngang">.</div>
+                <div class="luu">
+                    ©ASUSTeK Computer Inc. Bảo lưu mọi quyền.
+                </div>
+        </div>
+    </footer>
+
+
+    <!---b2: giả lập hàm javascript để chuyển một đối tượng item giỏ hàn thành html-->
+
+    <script>
+function onClickMuaHang() {
+            /* b1: kiểm tra hợp lệ*/
+            if (formMuaHangHopLe() == true) {
+                /*b2 thực hiện đăng nhập*/
+                console.log('thực hiện đăng nhập')
+            }
+
+        }
+        function formMuaHangHopLe() {
+            //1. truy cập node hoTen, soDienThoai để lấy dữ liệu
+            var hopLe = true;
+            var nodeHoTen = document.getElementById('hoTen');
+            var nodeSoDienThoai = document.getElementById('soDienThoai');
+            var nodeEmail = document.getElementById('email');
+            var nodeNgaySinh = document.getElementById('ngaySinh');
+            var nodeThoiGianNhanHang = document.getElementById('thoiGianNhanHang')
+            var hoTen = nodeHoTen.value;
+            var soDienThoai = nodeSoDienThoai.value;
+            var email = nodeEmail.value;
+            var ngaySinh = nodeNgaySinh.value;
+            var thoiGianNhanHang = nodeThoiGianNhanHang.value;
+            console.log('Họ tên là: ' + hoTen);
+            console.log('Số điện thoại là: ' + soDienThoai);
+
+            var nodeHienThiLoiHoTen = document.getElementById('hienThiLoiHoTen');
+            var nodeHienThiLoiSoDienThoai = document.getElementById('hienThiLoiSoDienThoai');
+            var nodeHienThiLoiEmail = document.getElementById('hienThiLoiEmail');
+            var nodeHienThiLoiThoiGianNhanHang = document.getElementById('hienThiLoiThoiGianNhanHang');
+            var nodeHienThiLoiNgaySinh = document.getElementById('hienThiLoiNgaySinh')
+            nodeHienThiLoiHoTen.innerHTML = '';
+            nodeHienThiLoiSoDienThoai.innerHTML = '';
+            nodeHienThiLoiEmail.innerHTML = '';
+            nodeHienThiLoiThoiGianNhanHang.innerHTML = '';
+            nodeHienThiLoiNgaySinh.innerHTML = '';
+
+            if (hoTen == null || hoTen.length <= 0) {
+                nodeHienThiLoiHoTen.innerHTML = 'Họ tên không được để trống !';
+                hopLe = false;
+            }
+            if (soDienThoai == null || soDienThoai.length > 10 || soDienThoai.length < 10) {
+                nodeHienThiLoiSoDienThoai.innerHTML = "Số điện thoại không được để trống và phải đủ 10 số !";
+                hopLe = false;
+            }
+            if (ngaySinh == null || ngaySinh.length <= 0) {
+                nodeHienThiLoiNgaySinh.innerHTML = "Vui lòng nhập đúng Ngày/Tháng/Năm !";
+                hopLe = false;
+            }
+            if (thoiGianNhanHang == null || thoiGianNhanHang.length <= 0 || thoiGianNhanHang < 8 || thoiGianNhanHang > 18) {
+                nodeHienThiLoiThoiGianNhanHang.innerHTML = "Vui lòng nhập thời gian nhận hàng trong khoảng 8-18h !";
+                hopLe = false;
+            }
+            if (email == null || email.length <= 0 || !email.match("^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$")) {
+                nodeHienThiLoiEmail.innerHTML = 'Email không được để trống và phải đúng chính quy! (Ví dụ: tre1622001@gmail.com)';
+                hopLe = false;
+            }
+            return hopLe;
+        }
+        //item gỏi hàng: idSanPham, soLuong
+        //b1: idSanPham->đối tượng sản phẩm, 
+        hienThiDanhSachItemGioHang();
+
+        function hienThiDanhSachItemGioHang() {
+            //b1:load danh sách từ local lên
+            var danhSachItemGioHang = loaddulieu('danhSachGioHang');
+            //b2: chuyển danh sách sang html
+            var HTML = chuyenDanhSachItemGioHangSangHTML(danhSachItemGioHang);
+            //b3: truy cập node gio-hang để in HTML danh sách item giỏ hàng
+            var nodeGioHang = document.getElementById('gio-hang');
+            nodeGioHang.innerHTML = nodeGioHang.innerHTML + HTML;
+            if (danhSachItemGioHang.length == 0)
+                nodeGioHang.innerHTML = `<div class="thong-bao-gio-trong">
+                                            <p>Giỏ Hàng hiện tại đang trống <span class = "nut-mua-tiep" onclick="location.href='index.html';">Tiếp tục mua</span></p>
+                                                <img src="images/gio1.png" alt="">
+                                    </div>`;
+
+            else
+                nodeGioHang.innerHTML = HTML;
+        }
+
+        // viết hàm chuyển 1 danh sách đối tượng thành html
+        function chuyenDanhSachItemGioHangSangHTML(danhSachItemGioHang) {
+            var htmlTong = '';
+           
+            let dataSanpham = loaddulieu('danhSachSanPham');
+
+            for (var i = 0; i < danhSachItemGioHang.length; i++) {
+
+                let sanPham = dataSanpham[dataSanpham.findIndex(sp => sp.id == danhSachItemGioHang[i].id)];
+                
+                sanPham =  taoSanPham(sanPham.hinhAnh, sanPham.ten, sanPham.giaGoc, sanPham.phanTram, sanPham.khuVuc, sanPham.id);
+                htmlTong += chuyenDoiTuongItemGioHangSangHTML(sanPham,danhSachItemGioHang[i].soluong);
+            }
+            return htmlTong;
+        }
+
+       
+
+        function chuyenDoiTuongItemGioHangSangHTML(sanPham,soluong) {
+
+            var tongTien = soluong*sanPham.tinhGiaban();
+        
+            var html = `   <div class="item-gio-hang">
+                               <div class="hinhAnh">  
+                                    <img src="${sanPham.hinhAnh}">  
+                               </div>  
+                               <div class="ten">${sanPham.ten}</div>  
+                               <div class="gia">  
+                                   <span id='gach' class="giaGoc">${sanPham.giaGoc}đ</span>  
+                                   <span class="giaBan">${sanPham.tinhGiaban()}đ</span>  
+                               </div>  
+                               <input type="number" class="soLuong" value="${soluong}" oninput ="onInputSoLuong('${sanPham.id}')">  
+                               <p class="tongTien">${tongTien}đ</p>  
+                               <div class="hanhDong" >  
+                                   <i class="far fa-trash-alt" onclick ="onclickXoa('${sanPham.id}')"></i>  
+                               </div>  
+                          </div>  `;
+
+                        
+            return html;
+        }
+
+    </script>
+
+ 
+    <!---b5: xử lí hàm chuyển đổi -->
+</body>
+
+</html>

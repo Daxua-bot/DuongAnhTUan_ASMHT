@@ -1,0 +1,824 @@
+    body {
+        margin: 0px;
+        font-family: tahoma;
+        /*font khong chân*/
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    input {
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        
+    }
+    img {
+        width: 100%;
+    }
+
+    #hien-thi-san-pham {
+        width: 1200px;
+        
+        margin: auto;
+    }
+
+    .san-pham {
+        width: calc(25% - 40px);
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 10px 20px;
+        ;
+    }
+
+    .phan-tram-giam-gia {
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .ten-san-pham {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .gia-goc {
+        font-size: 12px;
+        color: #666;
+        text-decoration: line-through;
+        margin-right: 5px;
+
+    }
+
+    .khu-vuc {
+        font-size: 14px;
+        color: #666;
+        text-align: right;
+    }
+
+    .gia-ban {
+        color: red;
+    }
+
+    button {
+        background-color: orange;
+        width: 150px;
+        height: 40px;
+        float: right;
+    }
+    .btn-them{
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        margin-top: 20px;
+        opacity: 0.7;
+        color: #fff;
+        background-color: black;
+    }
+    .btn-them:hover{
+        opacity: 1;
+        transform: translateY(-1px);
+    }
+    body{
+        margin: 0px;
+        font-family: Arial;
+    
+    }
+    body {
+        overflow-x:hidden;
+    }
+    
+    #thanhtren{
+        width: 1600px;
+        height: 108px;
+        background-image: url('images/nen7.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    .logo-banner{
+        width: 1200px;
+        height: 114px;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 260px;
+        height: 80px;
+        margin: 15px auto;
+        float: left;
+        margin-left: 20px;
+    }
+    
+    
+    
+    .timkiem{
+        width: 500px;
+        height: 50px;
+        margin-left: 40px;
+        margin: 30px;
+        float: left;
+    }
+    .timkiem input:first-child {
+        width: 350px;
+        height: 50px;	
+        padding: 0px;
+        padding-left: 30px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .timkiem input:last-child {
+        width: 110px;
+        height: 51px;
+        padding: 0px;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    
+    
+    
+    .dangnhap{
+        width: 160px;
+        height: 50px;
+        float: right;
+        margin: 30px;	
+        margin-right: 20px;
+    }
+    .dangnhap input:first-child{
+        width: 80px;
+        height: 34px;
+        border: none;
+        padding: 0px;
+        background-position: center;
+        background-color: white;
+        margin: 10px;
+        float: right;
+    }
+    
+    .tim{
+        width: 40px;
+        height: 34px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    
+    
+    
+    header {
+        margin-bottom: 1px ;
+    }
+    ul, ol {
+        padding: 0px;
+        margin: 0px;
+    }
+    #thanhmenu {
+        width: 100%;
+        height: 50px;
+        background-color: black; 
+        
+    }
+    
+    #thanhmenu li {
+        float: left;
+        line-height: 45px;
+        list-style-position: inside;
+        margin-right: 15px;
+    }
+    
+    #thanhmenu a {
+        margin-right: 100px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    
+    }
+    #thanhmenu li:hover ,
+    
+    #thanhmenu .active {
+        background-color: #1C1C1C;
+        color: #1C1C1C;
+    }
+    #khungmenu{
+        margin-left: 170px;
+    }
+    .slider{
+        width: 90%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .thanhten{
+        margin-top: 17px;
+        width: 1200px;
+        height:60px;
+        background-color: white;
+        float: left;
+        margin-left: 150px;
+        transform:skewX(-30deg);
+        margin-bottom: 15px;
+        border: 10px solid black;
+       
+    }
+    .thanhten a:hover{
+        color: red;
+    }
+    #khungsanpham{
+        width: 100%;
+        height: 2000px;
+    }
+    #khungsanpham li {
+        float: left;
+        line-height: 60px;
+        list-style-position: inside;
+        margin-right: 27px;
+    
+    }
+    
+    #khungsanpham a {
+        margin-right: 70px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        float: right;
+    
+    }
+    #khungsanpham .active{
+        background-color: #424242;
+        color: #424242;
+    }
+    .nghieng{
+        transform:skewX(30deg);
+    }
+    #khungsanpham a:hover,
+    #khungsanpham .innghieng{
+        color: red;
+    }
+    #mat{
+        width: 1200px;
+        height: 1200px;
+        background-repeat: none;
+        float: left;
+        margin-left: 170px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #tensp{
+        width: 480px;
+        height: 60px;
+        float: left;
+        margin-left: 350px;
+        color: red;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #khung{
+        width: 1200px;
+        height: 250px;
+        float: left;
+        margin-left: 50px;
+    
+    }
+    .sanpham{
+        width: 220px;
+        height: 200px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 30px;
+        padding:30px;
+        text-align: center;
+        border: 5px solid black;
+        background-color: white;   
+    }
+    
+    .sanpham:hover{
+        transform: scale(1.03);
+        border: 5px solid red;
+    }
+    .test{
+        margin-top: 15px;
+    }
+    #tensp1{
+        width: 480px;
+        height: 60px;
+        float: left;
+        margin-left: 350px;
+        color: red;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    #khung1{
+        width: 1200px;
+        height: 250px;
+        float: left;
+        margin-left: 50px;
+    }
+    #tensp2{
+        width: 480px;
+        height: 60px;
+        float: left;
+        margin-left: 350px;
+        color: red;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    #khung2{
+        width: 1200px;
+        height: 250px;
+        float: left;
+        margin-left: 50px;
+    }
+    .gia{
+        font-size: 20px;
+        color: red;
+        margin-top: 10px;
+    }
+    #quangcao{
+        width: 1200px;
+        height: 450px;	
+        float: left;
+        margin-left: 160px;
+        margin-top: 80px;
+    }
+    #chan{
+        margin-top: 20px;
+        float: left;
+        width: 100%;
+        height: 260px;
+        background-color: black;
+    }
+    
+    .chunho{
+        margin-top: 10px;
+        color: white;
+        font-size: 15px;
+        text-align: left;
+    }
+    .chunho a{
+        color: red;
+        float: left;
+    }
+    .duoi{
+        width: 170px;
+        height: 130px;
+        float: left;
+        margin-left: 150px;
+        margin-top: 30px;
+        padding:15px;
+        text-align: left;
+        color: white;
+        font-size: 25px;
+    }
+    .ngang{
+        width: 100%;
+        height:50px;
+        background-color: #A4A4A4;
+        margin-top: 215px;
+        font-size: 3px;
+    }
+    .luu{
+        width: 300px;
+        height:45px;
+        color: white;
+        font-size: 10px;
+        float: right;
+        margin-top: 13px;
+        margin-right: 70px;
+    }
+    #khungchamsoc{
+        width: 100%;
+        height: 2000px;
+    }
+    #khungchamsoc li {
+        float: left;
+        line-height: 60px;
+        list-style-position: inside;
+        margin-right: 27px;
+    
+    }
+    
+    #khungchamsoc a {
+        margin-right: 70px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        float: right;
+    
+    }
+    #khungchamsoc a:hover,
+    #khungchamsoc .innghieng{
+        color: red;
+    }
+    .chamsoc{
+        width: 500px;
+        height: 55px;
+        color: #FF4000;
+        margin-left: 500px; 
+        font-size: 30px;
+        padding: 100px;
+    }
+    .googlemap{
+        width: 1000px;
+        height: 510px;
+        margin-left: 250px;
+        background-color: #ebebeb;
+    }
+    .xam{
+        width: 1000px;
+        height: 200px;
+        background-color: #ebebeb;
+        margin-left: 250px;
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+    .dienthoai{
+        width: 500px;
+        height: 55px;
+        margin: 0 auto;
+       
+    }
+    .dienthoai1{
+        width: 500px;
+        height: 55px;
+        margin: 0 auto;
+        margin-top: 17px;
+    }  
+    .dienthoai2{
+        width: 500px;
+        height: 55px;
+        margin: 0 auto;
+        margin-top: 17px;
+    }
+    .icon{
+        width: 60px;
+        height: 55px;
+        float: left;
+    }
+    .a{
+        width: 400px;
+        height: 55px;
+        font-size: 20px;
+        color: black;
+        float: right;
+        margin-top: 15px;
+    
+    }
+    .a1{
+        width: 400px;
+        height: 55px;
+        font-size: 20px;
+        color: black;
+        float: right;
+        margin-top: 15px;
+    
+    }
+    .a2{
+        width: 400px;
+        height: 55px;
+        font-size: 20px;
+        color: black;
+        float: right;
+        margin-top: 15px;
+    
+    }
+    .a2 a{
+        color: red;
+        float: right;
+    }
+    #tendoanhnghiep{
+        width: 480px;
+        height: 60px;
+        float: left;
+        margin-left: 350px;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    
+    }
+    #khung3{
+        width: 1200px;
+        height: 250px;
+        float: left;
+        margin-left: 50px;
+        
+    }
+    .ghi{
+        width: 900px;
+        height: 230px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 80px;
+        padding:30px;
+        text-align: center;
+        background-color: white;
+        font-size: 20px;
+        border-bottom: 2px solid #898989;   
+    }
+    #khung4{
+        width: 1200px;
+        height: 250px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 300px;
+    }
+    #mat1{
+        width: 1200px;
+        height: 1200px;
+        background-repeat: none;
+        float: left;
+        margin-left: 170px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 100px;
+    }
+    .ghi1{
+        width: 320px;
+        height: 460px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 50px;
+        padding:15px;
+        text-align: center;
+        background-color: white;
+        font-size: 20px;
+        border-bottom: 2px solid #898989;   
+    }
+    .tieude{
+        font-size: 20px;
+        color: black;
+        margin-top: 10px;
+    }
+    .tieude1{
+        font-size: 15px;
+        color: black;
+        margin-top: 30px;
+    }
+    .tieude2{
+        font-size: 15px;
+        color: black;
+        margin-top: 10px;
+    }
+    .tieude3{
+        font-size: 15px;
+        color: #1182eb;
+        margin-top: 10px;
+    }
+    .tieude4{
+        font-size: 15px;
+        color: #1182eb;
+        margin-top: 30px;
+    }
+    #mat2{
+        width: 1200px;
+        height: 1200px;
+        background-image: url('images/Group 3.png');
+        background-repeat: none;
+        float: left;
+        margin-left: 170px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 100px;
+    }
+    #tensp3{
+        width: 480px;
+        height: 60px;
+        float: left;
+        margin-left: 350px;
+        color: #f6ff02;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 70px;
+    }
+    .ovuong{
+        width: 490px;
+        height: 20px;
+        float: left;
+        margin-left: 50px;
+        font-size: 20px;
+        color: white;
+        margin-top: 100px;
+    }
+    .dangky{
+        width: 200px;
+        height: 50px;
+        float: right;	
+        margin-right: 175px;
+        margin-top: -157px;
+    
+    }
+    .dangky input:first-child{
+        width: 200px;
+        height: 34px;
+        border: none;
+        padding: 0px;
+        background-position: center;
+        color: #f6ff02;
+        float: right;
+        font-size: 30px;
+        background-color: transparent;
+    }
+    .otrai{
+        width: 650px;
+        height: 630;
+        background-color: red;
+    }
+    .otimkiem{
+        width: 500px;
+        height: 50px;
+        margin-left: 7px;
+    }
+    .otimkiem input:first-child {
+        width: 350px;
+        height: 50px;		
+        color: black;
+        border: 1px solid black;
+        border-radius: 1px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+    .otimkiem input:last-child {
+        width: 450px;
+        height: 40px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 3px;
+        color: black;
+    }
+    .tensp4{
+        width: 1000px;
+        height: 40px;
+        text-align: center;
+        float: left;
+        margin-top: 200px;
+        font-size: 30px;
+        color: white;
+        margin-left: 120px;
+    }
+    .khac{
+        width: 279px;
+        height: 77px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 100px;
+        padding:20px;
+        text-align: center; 
+        border-radius: 5px;
+    }
+    
+    .khac:hover{
+        transform: scale(1.03);
+        border-radius: 5px;
+    }
+    #mat3{
+        width: 1200px;
+        height: 1200px;
+        background-image: url('images/den.png');
+        background-repeat: none;
+        float: left;
+        margin-left: 170px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 100px;
+    }
+    .tintuc{
+        width: 500px;
+        height: 345px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 30px;
+        text-align: center;
+        border: 5px solid #F4FA58;
+        background-color: white;   
+    }
+    
+    .tintuc:hover{
+        transform: scale(1.03);
+        border: 5px solid #CC2EFA;
+    }
+    #tensp5{
+        width: 450px;
+        height: 60px;
+        float: left;
+        margin-left: 350px;
+        color: yellow;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+        padding: 30px;
+    }
+    #tensp6{
+        width: 450px;
+        height: 60px;
+        float: left;
+        margin-left: 350px;
+        color: yellow;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 200px;
+    }
+    #khungtintuc{
+        width: 1200px;
+        height: 250px;
+        float: left;
+        margin-left: 50px;
+    }
+    #khungtintuc2{
+        width: 1200px;
+        height: 250px;
+        float: left;
+        margin-left: 50px;
+    }
+    .menutop{
+        width: 100%;
+        height: 50px;
+    }
+    .khungmenu{
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        background-color: black;
+        text-decoration: none;
+    
+    }
+    
+    .khungmenu li{
+        float: left;
+        padding-left: 22px;
+        padding-right: 20px;
+        line-height: 50px;
+        font-size: 16px;
+        
+    
+        
+    }
+    .nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .nav a:hover{
+        text-decoration: underline;
+    }
+    .nav li{
+        text-decoration: none;
+        color: #fff;
+    }
+    .nav li:hover{
+        background-image: linear-gradient(#848484, #848484);
+    }
+    .nav>li{
+        float: left;
+        margin-right: 15px;
+    
+    }
+    
+    .nav>li>a{
+        text-transform: uppercase;
+        color: red;
+    }
+    
+    .nav li{
+        position: relative;
+        list-style:none;
+    }
+    
+    .nav li a{
+        padding: 10px;
+        line-height: 20px;
+        display: inline-block;
+        color: #fff;
+    }
+    
+    .nav .sub-menu{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 160px;
+        background-color: black;
+    
+    }
+    
+    .nav li:hover>.sub-menu{
+        display: block;
+    }
+    
+    .nav>li>.sub-menu{
+        top: 40px;
+        left: 0;
+    }
